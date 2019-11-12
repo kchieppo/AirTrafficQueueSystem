@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * Contains the core logic of the air traffic queue system.
  * 
  * @author Kevin Chieppo
  *
@@ -20,7 +21,7 @@ public final class AircraftQueue {
 	private boolean systemBooted;
 	
 	/**
-	 * 
+	 * Sole constructor. Meant for use by AircraftQueueManager.
 	 */
 	public AircraftQueue()
 	{

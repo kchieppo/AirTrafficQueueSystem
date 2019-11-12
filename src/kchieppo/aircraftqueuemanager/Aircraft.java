@@ -1,5 +1,11 @@
 package kchieppo.aircraftqueuemanager;
 
+/**
+ * The main data type used in the aircraft queue.
+ * 
+ * @author Kevin Chieppo
+ *
+ */
 public final class Aircraft {
 
 	public static enum ACType
@@ -14,6 +20,12 @@ public final class Aircraft {
 	private ACType acType;
 	private ACSize acSize;
 	
+	/**
+	 * Sole constructor. Meant for use by clients.
+	 * 
+	 * @param acType the type of aircraft (passenger/cargo)
+	 * @param acSize the size of aircraft (large/small)
+	 */
 	public Aircraft(ACType acType, ACSize acSize)
 	{
 		this.acType = acType;

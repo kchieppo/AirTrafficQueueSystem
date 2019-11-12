@@ -10,6 +10,8 @@ public class AircraftQueueManagerTest {
 		
 		acQueueManager.aqm_request_process(AircraftQueueManager.RequestType.BOOT);
 		
+		// Generates aircrafts of random types and sizes, enqueues them,
+		// and dequeues them.
 		Random rand = new Random();
 		for (int i = 0; i < 10; i++)
 		{
