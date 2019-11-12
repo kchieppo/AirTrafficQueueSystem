@@ -4,7 +4,7 @@ public class AircraftQueueManagerTest {
 
 	public static void main(String[] args)
 	{
-		AircraftQueueManager acQueueManager = new AircraftQueueManager();
+		final AircraftQueueManager acQueueManager = new AircraftQueueManager();
 		
 		acQueueManager.aqm_request_process(AircraftQueueManager.RequestType.BOOT);
 		

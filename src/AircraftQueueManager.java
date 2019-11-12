@@ -1,11 +1,11 @@
-public class AircraftQueueManager {
+public final class AircraftQueueManager {
 
 	public static enum RequestType
 	{
 		BOOT, ENQUEUE, DEQUEUE
 	}
 	
-	private AircraftQueue aircraftQueue;
+	private final AircraftQueue aircraftQueue;
 	
 	public AircraftQueueManager()
 	{

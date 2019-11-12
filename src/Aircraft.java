@@ -1,4 +1,4 @@
-public class Aircraft {
+public final class Aircraft {
 
 	public static enum ACType
 	{
@@ -36,7 +36,7 @@ public class Aircraft {
 		return acSize;
 	}
 	
-	public String toString()
+	@Override public String toString()
 	{
 		String out = "ID: " + super.toString()
 				+ " Type: " + this.acType

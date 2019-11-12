@@ -3,11 +3,11 @@ import java.util.Queue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AircraftQueue {
+public final class AircraftQueue {
 
-	final Logger logger = LoggerFactory.getLogger(AircraftQueue.class);
+	private final Logger logger = LoggerFactory.getLogger(AircraftQueue.class);
 	
-	private Queue<Aircraft>[] acMultiQueue;
+	private final Queue<Aircraft>[] acMultiQueue;
 	private boolean systemBooted;
 	
 	public AircraftQueue()
